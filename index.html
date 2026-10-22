@@ -3,114 +3,217 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A0A0B">
 <title>Evandro Dias · IA para negócios</title>
-<meta name="description" content="Atendente de IA no WhatsApp, conteúdo e vídeos com IA para negócios. Baixe grátis o Manual Motion com IA.">
-<meta property="og:title" content="Evandro Dias · IA para negócios">
-<meta property="og:description" content="IA que atende, vende e cria conteúdo pro seu negócio. Materiais grátis.">
+<meta name="description" content="Atendente de IA no WhatsApp, conteúdo e sistemas com IA para negócios locais. Demonstração grátis e materiais gratuitos.">
+<meta property="og:title" content="Evandro Dias · IA que atende, vende e cria conteúdo">
+<meta property="og:description" content="Coloque IA para trabalhar no seu negócio. Demonstração grátis antes de pagar.">
 <meta property="og:image" content="assets/evandro.jpg">
 <style>
 @font-face{font-family:A;src:url(assets/Anton.ttf);font-display:swap}
 @font-face{font-family:M;src:url(assets/Mono.ttf);font-display:swap}
 @font-face{font-family:I;src:url(assets/Inter.ttf);font-display:swap}
 @font-face{font-family:S;src:url(assets/Serif.woff2);font-display:swap}
-:root{--bg:#0A0A0B;--panel:#131316;--line:#ffffff1c;--g:#D4FF3A;--t:#F2F2F2;--mut:#9a9a9a}
+:root{--bg:#0A0A0B;--panel:#131316;--line:#ffffff1c;--g:#D4FF3A;--t:#F2F2F2;--mut:#9a9a9a;--r:#FF4D3D}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--t);font-family:I,system-ui,sans-serif;line-height:1.5;
+body{background:var(--bg);color:var(--t);font-family:I,system-ui,sans-serif;line-height:1.55;
  background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:44px 44px}
 a{color:inherit}
-.w{max-width:560px;margin:0 auto;padding:0 18px}
-.g{color:var(--g)}.S{font-family:S;font-style:italic;font-weight:400}
+.w{max-width:620px;margin:0 auto;padding:0 18px}
+.g{color:var(--g)}.r{color:var(--r)}.S{font-family:S;font-style:italic;font-weight:400;text-transform:none}
 .k{font-family:M;font-size:12px;letter-spacing:3px;color:var(--g);text-transform:uppercase}
-h1,h2{font-family:A;font-weight:400;text-transform:uppercase;line-height:.95}
-h1{font-size:clamp(40px,11vw,62px)}h2{font-size:clamp(30px,8vw,42px);margin:8px 0 16px}
-nav{display:flex;justify-content:space-between;padding:16px 0;font-family:M;font-size:12px;letter-spacing:3px;border-bottom:1px solid var(--line)}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-.hero{text-align:center;padding:36px 0 40px}
-.av{width:132px;height:132px;border-radius:50%;border:3px solid var(--g);object-fit:cover;box-shadow:0 0 50px rgba(212,255,58,.25);margin-bottom:18px}
-.hero p{color:#cfcfcf;font-size:17px;margin:14px auto 0;max-width:440px}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--g);color:#0A0A0B;font-family:A;font-size:21px;letter-spacing:.5px;text-transform:uppercase;padding:17px 20px;border-radius:14px;text-decoration:none;margin-top:12px;transition:transform .15s}
+.num{font-family:M;font-size:12px;color:var(--mut);letter-spacing:2px}
+h1,h2,h3{font-family:A;font-weight:400;text-transform:uppercase;line-height:.95}
+h1{font-size:clamp(40px,11vw,66px)}h2{font-size:clamp(32px,8.5vw,46px);margin:10px 0 18px}h3{font-size:26px}
+p.l{color:#cfcfcf;font-size:17px}
+header.top{position:sticky;top:0;z-index:9;background:#0A0A0Bdd;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .w{display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
+header.top b{font-family:M;font-size:12px;letter-spacing:3px}
+.mini{background:var(--g);color:#000;font-family:A;font-size:15px;padding:8px 14px;border-radius:10px;text-decoration:none;text-transform:uppercase}
+.marq{overflow:hidden;border-bottom:1px solid var(--line);white-space:nowrap}
+.marq div{display:inline-block;padding:12px 0;animation:mq 26s linear infinite;font-family:M;font-size:12px;letter-spacing:2px;color:#bbb}
+.marq span{margin:0 18px}.marq span::before{content:"◆ ";color:var(--g)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq div{animation:none}}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+.hero{padding:40px 0 48px}
+.av{width:96px;height:96px;border-radius:50%;border:3px solid var(--g);object-fit:cover;box-shadow:0 0 40px rgba(212,255,58,.25)}
+.who{display:flex;gap:14px;align-items:center;margin-bottom:22px}
+.who b{display:block}.who span{color:var(--mut);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--g);color:#0A0A0B;font-family:A;font-size:21px;letter-spacing:.5px;text-transform:uppercase;padding:17px 20px;border-radius:14px;text-decoration:none;margin-top:14px;transition:transform .15s}
 .btn:active{transform:scale(.98)}
 .btn.o{background:transparent;color:var(--t);border:1.5px solid #ffffff33;font-size:18px}
-.btn small{font-family:M;font-size:11px;letter-spacing:1px;opacity:.7}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:12px;display:flex;gap:16px;align-items:center;text-decoration:none}
-.card .ic{flex:0 0 52px;height:52px;border-radius:14px;background:#1d1d22;display:flex;align-items:center;justify-content:center;font-size:24px}
-.card b{display:block;font-size:17px}.card span{color:var(--mut);font-size:14px}
-.card .go{margin-left:auto;font-family:M;color:var(--g)}
-.svc{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:12px}
-.svc h3{font-family:A;font-weight:400;font-size:26px;text-transform:uppercase}
-.svc p{color:#bdbdbd;margin-top:6px}
-.price{display:inline-block;margin-top:12px;font-family:M;font-size:13px;color:#0A0A0B;background:var(--g);padding:4px 10px;border-radius:6px}
-.steps li{list-style:none;display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.steps b.n{font-family:M;color:var(--g);min-width:28px}
+.note{text-align:center;font-family:M;font-size:11px;color:var(--mut);letter-spacing:1px;margin-top:10px}
+ul.x,ul.c{list-style:none;margin-top:8px}
+ul.x li,ul.c li{padding:13px 0 13px 34px;border-bottom:1px solid var(--line);position:relative;font-size:16px}
+ul.x li::before{content:"✕";position:absolute;left:4px;color:var(--r);font-family:M}
+ul.c li::before{content:"✓";position:absolute;left:4px;color:var(--g);font-family:M}
+.quote{border-left:3px solid var(--g);padding:6px 0 6px 18px;margin:22px 0;font-size:22px}
+.pill{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:14px}
+.pill .tag{font-family:M;font-size:12px;letter-spacing:2px;color:var(--g)}
+.pill h3{margin:8px 0 10px}
+.pill p{color:#bdbdbd}
+.price{display:inline-block;margin-top:14px;font-family:M;font-size:13px;color:#0A0A0B;background:var(--g);padding:5px 11px;border-radius:6px}
+.obj{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:12px}
+.obj b{display:block;font-size:18px;margin-bottom:6px}.obj b::before{content:"“";color:var(--g);font-family:A;margin-right:4px}
+.obj p{color:#bdbdbd}
+.steps li{list-style:none;display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.steps b.n{font-family:A;font-size:30px;color:var(--g);min-width:38px;line-height:1}
 .shots{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
-.shots img{height:260px;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start}
+.shots img{height:280px;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:10px;display:flex;gap:14px;align-items:center;text-decoration:none}
+.card .ic{flex:0 0 46px;height:46px;border-radius:12px;background:#1d1d22;display:flex;align-items:center;justify-content:center;font-size:22px}
+.card b{display:block;font-size:16px}.card span{color:var(--mut);font-size:13px}
+.card .go{margin-left:auto;font-family:M;color:var(--g)}
+.offer{background:var(--panel);border:2px solid var(--g);border-radius:24px;padding:30px 22px;text-align:center}
+.offer .big{font-family:A;font-size:64px;line-height:1;margin:8px 0}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.ab div{border-radius:16px;padding:18px;border:1px solid var(--line)}
+.ab .a{background:#1a1112;border-color:#FF4D3D55}.ab .b{background:#141a0c;border-color:#D4FF3A55}
+.ab h3{font-size:22px;margin-bottom:8px}.ab p{font-size:14px;color:#ccc}
 details{border-bottom:1px solid var(--line);padding:16px 0}
 summary{cursor:pointer;font-weight:600;list-style:none;font-size:17px}
 summary::after{content:"+";float:right;color:var(--g);font-family:M}details[open] summary::after{content:"–"}
 details p{color:#bdbdbd;margin-top:8px}
-footer{padding:30px 0 50px;text-align:center;color:var(--mut);font-size:12px}
+footer{padding:34px 0 60px;text-align:center;color:var(--mut);font-size:12px}
 </style>
 </head>
 <body>
+<header class="top"><div class="w"><b>EVANDRO DIAS</b><a class="mini wa" href="#">Falar comigo</a></div></header>
+<div class="marq"><div><span>ATENDENTE DE IA NO WHATSAPP</span><span>CLAUDE · CHATGPT</span><span>AUTOMAÇÕES</span><span>SISTEMAS SOB MEDIDA</span><span>REELS COM IA</span><span>VÍDEOS MOTION</span><span>SITES E CARDÁPIOS</span><span>IA DE LIGAÇÃO</span><span>ATENDENTE DE IA NO WHATSAPP</span><span>CLAUDE · CHATGPT</span><span>AUTOMAÇÕES</span><span>SISTEMAS SOB MEDIDA</span><span>REELS COM IA</span><span>VÍDEOS MOTION</span><span>SITES E CARDÁPIOS</span><span>IA DE LIGAÇÃO</span></div></div>
+
 <div class="w">
-<nav><span>EVANDRO DIAS</span><span class="g">IA SEM HYPE</span></nav>
-
-<header class="hero">
- <img class="av" src="assets/evandro.jpg" alt="Foto de Evandro Dias">
- <div class="k">Dono da Amepis · IA aplicada em negócios</div>
- <h1 style="margin-top:12px">IA que <span class="g">atende</span>, vende e cria conteúdo <span class="S g" style="text-transform:none">pro seu negócio</span></h1>
- <p>Eu coloco inteligência artificial pra trabalhar no seu WhatsApp e no seu Instagram, enquanto você cuida do resto.</p>
- <a class="btn" href="gratis/manual-motion-com-ia.pdf">🎬 Baixar o manual grátis</a>
- <a class="btn o" href="#servicos">Quero IA no meu negócio</a>
-</header>
-
-<section>
- <div class="k">Materiais grátis</div>
- <h2>Baixe <span class="g">agora</span></h2>
- <a class="card" href="gratis/manual-motion-com-ia.pdf"><div class="ic">🎬</div><div><b>Manual Motion com IA</b><span>Vídeos animados só conversando com o Claude</span></div><div class="go">→</div></a>
- <a class="card" href="gratis/kit-ia-negocios-locais.pdf"><div class="ic">💬</div><div><b>Kit IA para Negócios Locais</b><span>Atendente de WhatsApp pronto + plano de 30 dias</span></div><div class="go">→</div></a>
- <a class="card" href="gratis/50-prompts-ia-negocios.pdf"><div class="ic">⚡</div><div><b>50 Prompts para o seu negócio</b><span>Artes, fotos, vídeos, legendas e atendimento</span></div><div class="go">→</div></a>
- <a class="card" href="gratis/guia-influencer-ia.pdf"><div class="ic">🧑‍🎤</div><div><b>Crie seu Influencer de IA</b><span>Do rosto ao primeiro dinheiro</span></div><div class="go">→</div></a>
- <a class="card" href="gratis/template-estudio-motion.zip"><div class="ic">🧩</div><div><b>Template + 3 skills do Claude</b><span>O projeto do vídeo "Esse vídeo foi escrito"</span></div><div class="go">→</div></a>
+<!-- 1. HERO -->
+<section class="hero">
+ <div class="who"><img class="av" src="assets/evandro.jpg" alt="Foto de Evandro Dias"><div><b>Evandro Dias</b><span>Dono da Amepis · IA aplicada em negócios reais</span></div></div>
+ <div class="k">Para negócios que vivem de WhatsApp e Instagram</div>
+ <h1 style="margin-top:12px">Seu negócio <span class="g">atendendo</span>, vendendo e postando <span class="S g">no automático</span></h1>
+ <p class="l" style="margin-top:16px">Eu coloco inteligência artificial pra responder seus clientes na hora, criar seu conteúdo e organizar sua operação, sem você precisar entender de tecnologia.</p>
+ <a class="btn wa" href="#">Quero uma demonstração grátis</a>
+ <a class="btn o" href="#gratis">Baixar materiais grátis</a>
+ <div class="note">Você vê funcionando com o seu negócio antes de pagar qualquer coisa</div>
 </section>
 
+<!-- 2. PROBLEMA -->
+<section>
+ <div class="num">01 // O PROBLEMA</div>
+ <h2>Enquanto você <span class="r">atende</span>, o cliente <span class="r">desiste</span></h2>
+ <ul class="x">
+  <li>Mensagem que fica horas sem resposta e cliente que fecha com o concorrente</li>
+  <li>Você no balcão, no atendimento e ainda tendo que postar no Instagram</li>
+  <li>Já testou "uma IA" e ela respondeu qualquer coisa pro cliente</li>
+  <li>Paga ferramenta que ninguém configurou direito</li>
+ </ul>
+ <p class="l" style="margin-top:20px">O problema não é a IA. É ninguém ter montado ela <b>do jeito do seu negócio</b>.</p>
+ <a class="btn wa" href="#">Quero resolver isso</a>
+</section>
+
+<!-- 3. HISTÓRIA -->
+<section>
+ <div class="num">02 // DE ONDE EU VENHO</div>
+ <h2>Eu testo <span class="g">no meu</span> negócio primeiro</h2>
+ <p class="l">Sou dono da <b>Amepis</b>, loja de EPI. Antes de oferecer qualquer coisa, eu uso no meu próprio negócio: IA que liga pra empresas e faz prospecção, conteúdo feito com IA e atendimento automático.</p>
+ <div class="quote">A IA não substitui você. Ela faz o que <span class="g">te faz perder venda</span> por falta de tempo.</div>
+ <p class="l">Hoje eu monto a mesma coisa pra outros negócios: barbearias, restaurantes, lojas, prestadores de serviço.</p>
+</section>
+
+<!-- 4. O QUE EU FAÇO -->
 <section id="servicos">
- <div class="k">Serviços</div>
- <h2>Eu faço <span class="g">por você</span></h2>
- <div class="svc"><h3>Atendente de IA no WhatsApp</h3><p>Responde na hora, até de madrugada. Agenda, tira dúvidas, passa preços e chama você quando precisa de um humano.</p><span class="price">A PARTIR DE R$ 997</span></div>
- <div class="svc"><h3>Conteúdo com IA</h3><p>Reels e artes do seu negócio todo mês, sem você precisar gravar nem editar.</p></div>
- <div class="svc"><h3>Vídeos motion</h3><p>Vídeos animados como os do meu perfil, para lançar produto, explicar serviço ou anunciar.</p></div>
- <div class="svc"><h3>Sistemas e sites</h3><p>Sites, cardápios digitais e sistemas sob medida, integrados ao seu atendimento.</p></div>
- <a class="btn" id="wa" href="https://wa.me/55NUMERO?text=Oi%20Evandro!%20Vim%20pelo%20Instagram%20e%20quero%20IA%20no%20meu%20neg%C3%B3cio.">💬 Falar no WhatsApp</a>
+ <div class="num">03 // O QUE EU FAÇO</div>
+ <h2>Três <span class="g">frentes</span></h2>
+ <div class="pill"><div class="tag">ATENDIMENTO</div><h3>Atendente de IA no WhatsApp</h3>
+  <ul class="c"><li>Responde na hora, 24 horas por dia</li><li>Agenda, tira dúvidas e passa preços</li><li>Só fala o que você aprovou</li><li>Te chama quando precisa de um humano</li></ul>
+  <span class="price">A PARTIR DE R$ 997</span></div>
+ <div class="pill"><div class="tag">CONTEÚDO</div><h3>Reels, artes e vídeos com IA</h3>
+  <ul class="c"><li>Conteúdo do seu negócio todo mês</li><li>Vídeos animados no estilo dos meus Reels</li><li>Você não precisa gravar nem editar</li></ul></div>
+ <div class="pill"><div class="tag">OPERAÇÃO</div><h3>Sistemas, sites e automações</h3>
+  <ul class="c"><li>Sites e cardápios digitais</li><li>Sistemas sob medida (estoque, pedidos, agenda)</li><li>Automações que ligam tudo ao seu WhatsApp</li></ul></div>
+ <a class="btn wa" href="#">Ver como fica no meu negócio</a>
 </section>
 
+<!-- 5. TRABALHOS -->
 <section>
- <div class="k">Como funciona</div>
+ <div class="num">04 // FEITO COM IA</div>
+ <h2>Alguns <span class="g">trabalhos</span></h2>
+ <div class="shots"><img src="assets/m9.3.jpg" alt="Reel animado escrito em código"><img src="assets/barb.jpg" alt="Carrossel para barbearia"><img src="assets/m15.6.jpg" alt="Reel animado"><img src="assets/cv.jpg" alt="Vídeo de visão computacional"><img src="assets/m47.8.jpg" alt="Reel animado TREMA"></div>
+ <p class="note" style="text-align:left">Arraste pro lado →</p>
+</section>
+
+<!-- 6. OBJEÇÕES -->
+<section>
+ <div class="num">05 // ANTES QUE VOCÊ PERGUNTE</div>
+ <h2>"Mas e <span class="g">se</span>…"</h2>
+ <div class="obj"><b>Eu não entendo nada de tecnologia</b><p>Nem precisa. Eu configuro, testo e te entrego funcionando. Você só aprova as respostas.</p></div>
+ <div class="obj"><b>Meu negócio é pequeno demais</b><p>É justamente o pequeno que mais perde cliente por demora. Quem atende sozinho é quem mais ganha com isso.</p></div>
+ <div class="obj"><b>E se a IA falar besteira?</b><p>Ela só usa as informações que você aprovar e passa pra você quando não souber ou o cliente pedir uma pessoa. Antes de ligar, testamos juntos.</p></div>
+</section>
+
+<!-- 7. COMO FUNCIONA -->
+<section>
+ <div class="num">06 // COMO FUNCIONA</div>
  <h2>3 <span class="g">passos</span></h2>
  <ul class="steps">
-  <li><b class="n">01</b><div><b>Conversa de 15 min</b><br><span style="color:var(--mut)">Entendo o seu negócio e onde você perde cliente.</span></div></li>
-  <li><b class="n">02</b><div><b>Demonstração grátis</b><br><span style="color:var(--mut)">Você vê funcionando com o SEU negócio antes de pagar.</span></div></li>
-  <li><b class="n">03</b><div><b>Implantação</b><br><span style="color:var(--mut)">Eu coloco no ar e acompanho os resultados com você.</span></div></li>
+  <li><b class="n">1</b><div><b>Conversa de 15 minutos</b><br><span style="color:var(--mut)">Entendo seu negócio e onde você perde cliente.</span></div></li>
+  <li><b class="n">2</b><div><b>Demonstração grátis</b><br><span style="color:var(--mut)">Você vê a IA funcionando com o SEU negócio antes de pagar.</span></div></li>
+  <li><b class="n">3</b><div><b>Implantação e acompanhamento</b><br><span style="color:var(--mut)">Coloco no ar, ajusto e acompanho os resultados com você.</span></div></li>
  </ul>
 </section>
 
-<section>
- <div class="k">Feito com IA</div>
- <h2>Alguns <span class="g">trabalhos</span></h2>
- <div class="shots"><img src="assets/m9.3.jpg" alt="Reel animado em código"><img src="assets/m15.6.jpg" alt="Reel animado: 99%"><img src="assets/barb.jpg" alt="Carrossel para barbearia"><img src="assets/cv.jpg" alt="Vídeo de visão computacional"><img src="assets/m47.8.jpg" alt="Reel animado: TREMA"></div>
+<!-- 8. OFERTA -->
+<section id="oferta">
+ <div class="offer">
+  <div class="k">Atendente de IA no WhatsApp</div>
+  <div style="color:var(--mut);margin-top:14px">a partir de</div>
+  <div class="big">R$ <span class="g">997</span></div>
+  <div style="color:var(--mut)">implantação · valor final depende do seu negócio</div>
+  <ul class="c" style="text-align:left;margin-top:18px"><li>Demonstração grátis antes de fechar</li><li>Configurado com as informações do seu negócio</li><li>Testes juntos antes de ligar</li><li>Ajustes na primeira semana inclusos</li></ul>
+  <a class="btn wa" href="#">Quero minha demonstração</a>
+ </div>
 </section>
 
+<!-- 9. GRÁTIS -->
+<section id="gratis">
+ <div class="num">07 // MATERIAIS GRÁTIS</div>
+ <h2>Comece <span class="g">sozinho</span>, de graça</h2>
+ <a class="card" href="gratis/kit-ia-negocios-locais.pdf"><div class="ic">💬</div><div><b>Kit IA para Negócios Locais</b><span>Atendente de WhatsApp pronto + plano de 30 dias</span></div><div class="go">→</div></a>
+ <a class="card" href="gratis/50-prompts-ia-negocios.pdf"><div class="ic">⚡</div><div><b>50 Prompts para o seu negócio</b><span>Artes, fotos, vídeos, legendas e atendimento</span></div><div class="go">→</div></a>
+ <a class="card" href="gratis/manual-motion-com-ia.pdf"><div class="ic">🎬</div><div><b>Manual Motion com IA</b><span>Vídeos animados só conversando com o Claude</span></div><div class="go">→</div></a>
+ <a class="card" href="gratis/template-estudio-motion.zip"><div class="ic">🧩</div><div><b>Template + skills do Claude</b><span>O projeto do vídeo "Esse vídeo foi escrito"</span></div><div class="go">→</div></a>
+ <a class="card" href="gratis/guia-influencer-ia.pdf"><div class="ic">🧑‍🎤</div><div><b>Crie seu Influencer de IA</b><span>Do rosto ao primeiro dinheiro</span></div><div class="go">→</div></a>
+</section>
+
+<!-- 10. FAQ -->
 <section>
- <div class="k">Dúvidas</div>
+ <div class="num">08 // DÚVIDAS</div>
  <h2>Perguntas <span class="g">frequentes</span></h2>
- <details><summary>Preciso entender de tecnologia?</summary><p>Não. Eu configuro tudo e te mostro como acompanhar, em linguagem simples.</p></details>
- <details><summary>Funciona pro meu negócio?</summary><p>Se você atende clientes pelo WhatsApp ou pelo Instagram, sim: barbearia, clínica, loja, restaurante, oficina…</p></details>
- <details><summary>A IA vai falar besteira com meu cliente?</summary><p>Ela só responde com as informações que você aprovar, e passa pra você sempre que não souber ou o cliente pedir uma pessoa.</p></details>
+ <details><summary>Funciona pro meu tipo de negócio?</summary><p>Se você atende clientes pelo WhatsApp ou pelo Instagram, sim: barbearia, clínica, loja, restaurante, oficina, prestador de serviço.</p></details>
+ <details><summary>Quanto tempo leva pra ficar pronto?</summary><p>Depende do tamanho do seu negócio. Na conversa inicial eu te passo o prazo certinho.</p></details>
+ <details><summary>Preciso trocar meu número de WhatsApp?</summary><p>Na conversa eu te explico as opções pro seu caso, incluindo usar o número que você já tem.</p></details>
+ <details><summary>Tem mensalidade?</summary><p>O valor de implantação é a partir de R$ 997. Se houver custo mensal de ferramenta ou de acompanhamento, eu te mostro antes de fechar.</p></details>
  <details><summary>Os materiais são grátis mesmo?</summary><p>Sim. É só baixar aqui ou comentar a palavra que aparece nos meus Reels.</p></details>
 </section>
 
-<footer>Evandro Dias · <a href="https://instagram.com/evandro_ai">Instagram</a><br><br>Claude é uma marca da Anthropic, sem vínculo com este conteúdo.</footer>
+<!-- 11. FECHAMENTO -->
+<section>
+ <div class="num">09 // DAQUI A 3 MESES</div>
+ <h2>Onde você <span class="g">quer estar?</span></h2>
+ <div class="ab">
+  <div class="a"><h3 class="r">Cenário A</h3><p>Ainda respondendo tudo na mão, perdendo cliente de madrugada e sem tempo pra postar.</p></div>
+  <div class="b"><h3 class="g">Cenário B</h3><p>IA atendendo e agendando, conteúdo saindo toda semana e você cuidando do que importa.</p></div>
+ </div>
+ <a class="btn wa" href="#">Quero o cenário B</a>
+ <div class="note">A conversa é grátis e sem compromisso</div>
+</section>
 </div>
+
+<footer class="w">Evandro Dias · <a href="https://instagram.com/evandro_ai">Instagram</a><br><br>Claude e ChatGPT são marcas de seus respectivos donos, sem vínculo com este serviço.</footer>
+
+<script>
+// Número do WhatsApp (DDI + DDD + número, só dígitos)
+const WA='55NUMERO';
+const msg=encodeURIComponent('Oi Evandro! Vim pelo seu site e quero uma demonstração de IA no meu negócio.');
+document.querySelectorAll('.wa').forEach(a=>a.href=`https://wa.me/${WA}?text=${msg}`);
+</script>
 </body>
 </html>
